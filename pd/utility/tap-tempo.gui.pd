@@ -1,0 +1,6 @@
+#N canvas 827 239 527 327 12;
+#X obj 0 -5 cnv 15 119 270 empty empty Tap\ Tempo 4 12 0 25 #dedede #131313 0;
+#X obj 14 29 bng 72 250 50 0 \$0-param-tap empty Tap -6 87 0 25 #e4e4e4 #4d4d4d #373737;
+#X floatatom 14 129 8 0 0 3 BPM \$0-display-bpm - 24;
+#X floatatom 14 194 5 1 64 3 Ratio \$0-param-rnum \$0-param-num 24;
+#X floatatom 68 194 5 1 64 0 / \$0-param-rdenom \$0-param-denom 24;

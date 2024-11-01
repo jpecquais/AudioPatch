@@ -1,0 +1,11 @@
+#N canvas 827 239 527 327 12;
+#X obj 269 143 inlet;
+#X obj 269 179 route resize, f 15;
+#X msg 269 207 resize \$1;
+#X obj 355 297 outlet;
+#X obj 355 245 clone utility/linear.range 1 \$1 \$2;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 4 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;

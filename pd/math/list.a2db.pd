@@ -1,0 +1,11 @@
+#N canvas 827 239 527 327 12;
+#X obj 356 213 inlet;
+#X obj 356 250 route resize;
+#X obj 414 316 clone math/amplitude_to_db 5;
+#X msg 356 279 resize \$1;
+#X obj 414 357 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 1 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;

@@ -1,0 +1,16 @@
+#N canvas 827 239 527 327 12;
+#X obj 353 124 inlet~;
+#X obj 416 124 inlet;
+#X obj 382 289 outlet~;
+#X text 353 104 Audio;
+#X text 416 104 Gain factor;
+#X floatatom 416 155 5 0 0 0 - - - 0;
+#X obj 382 250 *~;
+#X obj 416 210 lop~ 7;
+#X obj 416 180 sig~;
+#X connect 0 0 6 0 32.................d....zA...fG....c....rC....;
+#X connect 1 0 5 0;
+#X connect 5 0 8 0;
+#X connect 6 0 2 0;
+#X connect 7 0 6 1;
+#X connect 8 0 7 0;

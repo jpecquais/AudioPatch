@@ -1,0 +1,12 @@
+#N canvas 827 239 527 327 12;
+#X obj 476 115 inlet~;
+#X obj 476 211 *~ 1;
+#X obj 476 281 outlet~;
+#X obj 599 115 inlet;
+#X obj 599 171 expr 1-$f1*2;
+#X text 599 93 phase toggle: 1 revert the phase;
+#X text 462 93 audio input;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 1;

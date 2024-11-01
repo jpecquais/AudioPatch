@@ -1,0 +1,15 @@
+#N canvas 827 239 527 327 12;
+#X obj 404 265 inlet~;
+#X obj 617 265 inlet;
+#X obj 830 265 inlet;
+#X obj 404 383 outlet~;
+#X text 404 201 ar-filter stand for Attack Release Filter \; Simple one pole switcher that change its coeffecient depending on the comparaison between x[0] and y[-1];
+#X obj 617 296 f \$1;
+#X obj 830 296 f \$2;
+#X obj 404 333 fexpr~ if($x1[0]>$y1[-1] \, $x1*(1-$f2)+$y1[-1]*$f2 \, $x1*(1-$f3)+$y1[-1]*$f3), f 64;
+#X connect 0 0 7 0;
+#X connect 1 0 5 0;
+#X connect 2 0 6 0;
+#X connect 5 0 7 1;
+#X connect 6 0 7 2;
+#X connect 7 0 3 0;

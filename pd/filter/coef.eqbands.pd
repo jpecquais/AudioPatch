@@ -1,0 +1,15 @@
+#N canvas 827 239 527 327 12;
+#X obj 254 217 bicoeff2 eq, f 21;
+#X obj 201 117 inlet;
+#X obj 317 147 inlet;
+#X obj 380 147 inlet;
+#X obj 254 255 outlet;
+#X obj 201 147 route bang;
+#X obj 201 174 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 5 0 6 0;
+#X connect 5 1 0 0;
+#X connect 6 0 0 0;

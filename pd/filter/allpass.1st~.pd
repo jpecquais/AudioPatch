@@ -1,0 +1,15 @@
+#N canvas 827 239 527 327 12;
+#X obj 410 141 inlet~;
+#X obj 410 329 outlet~;
+#X obj 616 186 !/ 1;
+#X obj 616 142 inlet;
+#X text 136 92 Basic first order allpass. It takes on zero \, and compute the output as the unique pole is equal to 1/zero, f 31;
+#X text 398 115 Audio input;
+#X text 601 121 zero input;
+#X obj 410 233 fexpr~ -$x[0]*$f2+$x[-1]+$y[-1]*$f2;
+#X obj 410 283 /~ 2;
+#X connect 0 0 7 0;
+#X connect 2 0 7 1;
+#X connect 3 0 2 0;
+#X connect 7 0 8 0;
+#X connect 8 0 1 0;
